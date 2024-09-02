@@ -14,5 +14,6 @@ pkgs.mkShell {
     pkgs.postgresql
     pkgs.go_1_22
     pkgs.yarn
+    pkgs.delve
   ];
 }
