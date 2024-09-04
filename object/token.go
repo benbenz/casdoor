@@ -163,7 +163,8 @@ func GetTokenByTokenValue(tokenValue, tokenTypeHint string) (*Token, error) {
 func updateUsedByCode(token *Token) bool {
 	affected, err := ormer.Engine.Where("code=?", token.Code).Cols("code_is_used").Update(token)
 	if err != nil {
-		panic(err)
+		//panic(err)
+		println(err)
 	}
 
 	return affected != 0

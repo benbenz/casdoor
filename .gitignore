@@ -36,3 +36,4 @@ server
 !manifests/casdoor
 
 init_data_dump.json
+init_data.json
